@@ -10,7 +10,6 @@ function greeting(i) {
 }
 
 greeting("ik where you live");
-
 const user = {
   name: "John",
   age: 30,
@@ -20,11 +19,7 @@ const user = {
 console.log(user.name); // "John"
 console.log(user.age); // 30
 
-console.log("User info:", user);
-// Output: User info: {name: "John", age: 30}
+console.log("User info: " + user.name + " | " + user.age);
 
-let num = "15";
-console.log(parseInt(num) + 5); // Output: 20
-
-let floatNum = "15.5";
-console.log(parseFloat(floatNum) + 5); // Output: 20.5
+let num = 15;
+console.log(num + 5);
