@@ -1,25 +1,34 @@
-let message = "Hello, World!";
-console.log(message);
-let myVariable = "The muffin man";
-console.log(myVariable);
-
-// Incorrect: treating a string like a function
-
-function greeting(i) {
-  console.log(i);
+function jumpOverFence(fox) {
+  return `${fox} Jumps Over The Fence`;
 }
 
-greeting("ik where you live");
-const user = {
-  name: "John",
-  age: 30,
-};
+// Test the function
+console.log(jumpOverFence("The Lazy Brown Fox")); // should return "The Lazy Brown Fox Jumps Over The Fence"
+function isEvenOrOdd(num) {
+  return num % 2 === 0;
+}
 
-// Accessing properties safely
-console.log(user.name); // "John"
-console.log(user.age); // 30
+// Test the function
+console.log(isEvenOrOdd(10)); // should return true
+console.log(isEvenOrOdd(5)); // should return false
+function celsiusToFahrenheit(celsiusNumber) {
+  return (celsiusNumber * 9) / 5 + 32;
+}
 
-console.log("User info: " + user.name + " | " + user.age);
+// Test the function
+console.log(celsiusToFahrenheit(30)); // should return 86
+console.log(celsiusToFahrenheit(0)); // should return 32
+function findMaxNumber(arr) {
+  return Math.max(...arr);
+}
 
-let num = 15;
-console.log(num + 5);
+// Test the function
+console.log(findMaxNumber([1, 2, 3, 4, 5])); // should return 5
+function sayHelloWorld() {
+  setTimeout(() => {
+    console.log("Hello World");
+  }, 2000);
+}
+
+// Test the function
+sayHelloWorld(); // should log "Hello World" after 2 seconds
